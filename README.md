@@ -16,6 +16,12 @@ sudo zypper install gawk
 sudo pacman -S gawk
 ```
 
+### Distros
+Supported and tested Linux Distros
+- Fedora 35
+- Ubuntu , Elementary OS , Debian
+- Manjaro - Xfc Desktop , Manjaro - Gnome Desktop
+- Open Suse - Xfc Desktop, Gnome Desktop
 
 ### Installation process
 Installation process is simple, download the zip of the repository and make sure to assign `chmod +x docker-desktop.sh` and run `./docker-desktop.sh install`.

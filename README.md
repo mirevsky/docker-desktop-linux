@@ -9,10 +9,12 @@ It's graphical interface of Docker for Linux, this is not an official release fr
 
 ### Requirements
 Before installing the script make sure to double check you have installed `gawk`
-`sudo apt install gawk`
-`sudo dnf install gawk`
-`sudo zypper install gawk`
-`sudo pacman -S gawk`
+```shell
+sudo apt install gawk
+sudo dnf install gawk
+sudo zypper install gawk
+sudo pacman -S gawk
+```
 
 
 ### Installation process

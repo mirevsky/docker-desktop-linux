@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <script type="text/javascript" src="resources/external-libs/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="resources/external-libs/jquery-ui-1.13.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/external-libs/jquery-ui-1.13.1/jquery-ui.min.css">
+</head>
+<body>
+</body>
+<script type="module">
+    import DockerDesktop from "./components/docker-desktop.js";
+    DockerDesktop.Render();
+    setTimeout(DockerDesktop.HealthCheck, 1000);
+</script>
+</html>

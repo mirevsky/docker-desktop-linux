@@ -1,0 +1,701 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 10pt;
+}
+
+header {
+    height: 68px;
+    color: #fff;
+    background: #85c2f6 no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+header > table.inner-header-table {
+    width: 100%;
+    height: 100%;
+}
+
+header > table.inner-header-table > tr > td > a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header > table.inner-header-table > tr > td > img.logo {
+    height: 32px;
+}
+
+header > table.inner-header-table > tr > td > a.back {
+    padding-left: 20px;
+    margin-left: 10px;
+    height: 16px;
+    display: inline-block;
+    background: url("../images/arrow-88-16-white.png") no-repeat;
+}
+
+header > table.inner-header-table > tr > td > a.sign_in {
+    position: relative;
+}
+header > table.inner-header-table > tr > td > a.sign_in > span.user {
+    display: inline-block;
+    background: url("../images/guest-16-blue.png") #fff no-repeat;
+    background-size: 16px 16px;
+    background-position: 1px 2px;
+    border-radius: 10px;
+    border: solid 2px #fff;
+    height: 18px;
+    width: 18px;
+    margin: 0px 3px;
+}
+header > table.inner-header-table > tr > td > a.sign_in > span.label {
+    display: inline-block;
+    padding-top: 3px;
+    padding-left: 3px;
+    float: right;
+    margin-right: 10px;
+}
+
+
+section {
+    width: 100%;
+    height: calc(100% - 64px);
+}
+
+section table.inner-section-table
+{
+    width: 100%;
+    height: 100%;
+    border-spacing: 0px;
+    padding: 0;
+    border: solid 0px red;
+}
+section table.inner-section-table > tr > td {
+    vertical-align: top;
+}
+
+section table.inner-section-table > tr > td.inner-section-menu {
+    width: 200px;
+    padding-left:24px;
+}
+section table.inner-section-table > tr > td.inner-section-menu a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 12px 5px;
+    padding-left: 32px;
+    border-left: 2px solid transparent;
+}
+
+section table.inner-section-table > tr > td.inner-section-menu a:hover {
+    color: #0073ec;
+    background: #D2EEF5FF;
+    border-left: 2px solid #0073ec;
+}
+
+section table.inner-section-table > tr > td.inner-section-menu a.active {
+    color: #0073ec;
+    background: #D2EEF5FF;
+    border-left: 2px solid #0073ec;
+}
+
+section table.inner-section-table > tr > td.inner-section-menu > div.general  > a {
+    background-image: url("../images/settings-10-16.png");
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+}
+section table.inner-section-table > tr > td.inner-section-menu > div.general:hover  > a {
+    background-image: url("../images/settings-10-16-blue.png");
+}
+
+section table.inner-section-table > tr > td.inner-section-menu > div.general  > a.active {
+    background-image: url("../images/settings-10-16-blue.png");
+}
+
+section table.inner-section-table > tr > td.inner-section-menu > div.command_line  > a {
+    background-image: url("../images/window-command-16.png");
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+}
+section table.inner-section-table > tr > td.inner-section-menu > div.command_line:hover  > a {
+    background-image: url("../images/window-command-16-blue.png");
+}
+section table.inner-section-table > tr > td.inner-section-menu > div.command_line  > a.active {
+    background-image: url("../images/window-command-16-blue.png");
+}
+
+section table.inner-section-table > tr > td.inner-section-menu > div.containers  > a {
+    background-image: url("../images/box-2-24.png");
+    background-size: 16px 16px;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+}
+section table.inner-section-table > tr > td.inner-section-menu > div.containers:hover  > a {
+    background-image: url("../images/box-2-24-blue.png");
+}
+section table.inner-section-table > tr > td.inner-section-menu > div.containers  > a.active {
+    background-image: url("../images/box-2-24-blue.png");
+}
+
+section table.inner-section-table > tr > td.inner-section-content {
+    border-left: solid 1px #ccc;
+}
+
+section table.inner-section-table > tr > td.inner-section-content > div {
+    display: block;
+    height: calc(100% - 72px);
+    overflow-y: scroll;
+}
+
+section table.inner-section-table > tr > td.inner-section-content > div#general {
+    padding: 42px
+}
+
+section table.inner-section-table > tr > td.inner-section-content > div#general > label {
+    display: inline-block;
+}
+
+section table.inner-section-table > tr > td.inner-section-content > div#general > div {
+    margin: 32px 0px;
+    height: 2px;
+    border: solid 1px #85c2f6;
+    background: #85c2f6;
+}
+
+section table.inner-section-table > tr > td.inner-section-content > div#general > div > div {
+    background: #ccc;
+}
+
+section table.inner-section-table > tr > td.inner-section-content > div#general > div > span {
+    height:8px;
+    width:8px;
+    border: solid 1px #85c2f6;
+    background: #85c2f6;
+    border-radius: 4px;
+}
+
+section div#containers {
+    padding: 20px;
+}
+
+section div#containers > div.tabs {
+    position: relative;
+}
+
+section div#containers > div.tabs ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+section div#containers > div.tabs ul > li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+section div#containers > div.tabs ul > li span.img {
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    float: left;
+}
+
+section div#containers > div.tabs ul > li.active > a {
+    color: #0073ec;
+    border-bottom: solid 2px #0073ec;
+}
+
+section div#containers > div.tabs ul > li > a[href="#Images"] > span.img {
+    background: url('../images/cloud-2-24.png') no-repeat;
+}
+
+section div#containers > div.tabs ul > li > a[href="#Images"]:hover > span.img {
+    background: url('../images/cloud-2-24-hover.png') no-repeat !important;
+}
+
+section div#containers > div.tabs ul > li.active > a[href="#Images"] > span.img {
+    background: url('../images/cloud-2-24-blue.png') no-repeat;
+}
+
+section div#containers > div.tabs ul > li > a[href="#Volumes"] > span.img {
+    background: url('../images/cloud-storage-24.png') no-repeat;
+}
+
+section div#containers > div.tabs ul > li > a[href="#Volumes"]:hover > span.img {
+    background: url('../images/cloud-storage-24-hover.png') no-repeat !important;
+}
+
+section div#containers > div.tabs ul > li.active > a[href="#Volumes"] > span.img {
+    background: url('../images/cloud-storage-24-blue.png') no-repeat;
+}
+
+section div#containers > div.tabs ul > li > a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px;
+    height:24px;
+    vertical-align: center;
+    border-bottom: solid 2px transparent;
+}
+
+section div#containers > div.tabs ul > li > a:hover {
+    color: #f59800;
+    border-bottom: solid 2px #f59800;
+}
+
+section div#containers > div.tabs ul > li > a > img {
+    display: inline-block;
+    height:24px;
+    width: 24px;
+}
+
+section div#containers > div.tabs ul > li > a > span {
+    display: inline-block;
+    height:24px;
+    padding-top: 5px;
+    padding-left: 5px;
+    float: right;
+    vertical-align: center;
+}
+
+section div#containers > div.tabs > div > div {
+    display: none;
+}
+
+section div#containers > div.tabs > div > div.active {
+    display: block !important;
+    color: #333;
+    overflow-x: scroll;
+    width: 540px;
+    max-width: 540px;
+}
+
+
+section div#containers > div.tabs div.active > div > table {
+    margin: 20px 0px;
+    width: 100%;
+    position:relative;
+    padding: 0;
+    border-collapse: collapse;
+    border: 0px solid #000;
+}
+
+section div#containers > div.tabs div.active > div > table > thead {
+    display: table; /* to take the same width as tr */
+    width: calc(100% - 17px); /* - 17px because of the scrollbar width */
+    border-bottom: solid 1px #333;
+}
+
+section div#containers > div.tabs div.active > div > table > tbody {
+    padding: 5px 0px;
+    width: 100%;
+    display: block; /* to enable vertical scrolling */
+    max-height: 320px; /* e.g. */
+    overflow-y: scroll; /* keeps the scrollbar even if it doesn't need it; display purpose */
+}
+
+section div#containers > div.tabs div.active > div > table th, td {
+    text-align: left;
+    padding: 0px;
+    word-break: break-all; /* 4. */
+    font-size: 8pt;
+}
+
+section div#containers > div.tabs div.active > div > table tr {
+    display: table; /* display purpose; th's border */
+    width: 100%;
+    box-sizing: border-box; /* because of the border (Chrome needs this line, but not FF) */
+}
+
+section div#containers > div.tabs div.active > div > table > thead td {
+    text-align: left;
+    border-bottom: none;
+    border-left: none;
+}
+
+section div#containers > div.tabs div.active > div > table > thead td > div.label {
+    max-width: 100px;
+    width: 90px;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 8pt;
+    font-weight: bold;
+    padding:5px;
+}
+
+section div#containers > div.tabs div.active > div > table > tbody tr:hover td {
+    background: #c4c4c4;
+}
+
+section div#containers > div.tabs div.active > div > table > tbody td {
+    text-align: left;
+    border-bottom: none;
+    border-left: none;
+    padding: 3px;
+    position: relative;
+}
+
+section div#containers > div.tabs div.active > div > table > tbody td > div.label {
+    max-width: 100px;
+    width: 90px;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 8pt;
+}
+
+section div#containers > div.tabs div.active > div > table > tbody td > div.label > a {
+    color: #0073ec;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    border-top: solid 1px #d6d6d8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 40px);
+    padding: 20px;
+    display: block;
+    background: #f4f4f6;
+}
+
+footer span {
+    display: inline-block;
+}
+
+footer > span span.active {
+    background: #11a661;
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+}
+
+footer > span span.pending {
+    background: #333;
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+}
+
+footer > span span.deactivated {
+    background: #cc0000;
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+}
+
+footer > span span.label {
+    padding: 0px 5px
+}
+
+footer > span.space {
+    width: 20px
+}
+
+footer > span.docker-settings {
+    float: right;
+    display: inline-block;
+    position: relative;
+}
+
+footer > span.docker-settings div.docker-menu {
+    display: none;
+    position:absolute;
+    z-index: 99;
+    width: 124px;
+    bottom: 40px;
+    right: 0px;
+    background: #f4f4f6;
+    border: solid 1px #0073ec;
+    border-bottom: solid 1px #0073ec;
+    border-radius: 4px;
+    padding:3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+footer > span.docker-settings div.docker-menu > div > a {
+    display: block;
+    text-decoration: none;
+    color: #0073ec;
+    padding: 3px 5px;
+    padding-left: 22px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+footer > span.docker-settings div.docker-menu::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0073ec transparent transparent transparent;
+}
+
+footer > span.docker-settings div.docker-menu > div {
+    display: block;
+    position: relative;
+}
+
+footer > span.docker-settings div.docker-menu > div > a:hover {
+    color: #333;
+    background: #f8d69d;
+}
+
+footer > span.docker-settings div.docker-menu > div.sign_in > a {
+    background-image: url("../images/guest-16-blue.png");
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+}
+footer > span.docker-settings div.docker-menu > div.sign_in:hover  > a {
+    background-image: url("../images/guest-16.png");
+}
+
+footer > span.docker-settings div.docker-menu > div.general  > a {
+    background-image: url("../images/settings-10-16-blue.png");
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+}
+footer > span.docker-settings div.docker-menu > div.general:hover  > a {
+    background-image: url("../images/settings-10-16.png");
+}
+
+footer > span.docker-settings div.docker-menu > div.command_line  > a {
+    background-image: url("../images/window-command-16-blue.png");
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+}
+footer > span.docker-settings div.docker-menu > div.command_line:hover  > a {
+    background-image: url("../images/window-command-16.png");
+}
+
+footer > span.docker-settings div.docker-menu > div.shortcuts  > a {
+    background-image: url("../images/arrow-88-16-blue.png");
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+}
+footer > span.docker-settings div.docker-menu > div.shortcuts:hover  > a {
+    background-image: url("../images/arrow-88-16.png");
+}
+
+footer > span.docker-settings div.docker-menu > div.help  > a {
+    background-image: url("../images/help-16-blue.png");
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+}
+footer > span.docker-settings div.docker-menu > div.help:hover  > a {
+    background-image: url("../images/help-16.png");
+}
+
+footer > span.docker-settings > a.docker-settings-button {
+    height: 32px;
+    width: 32px;
+    display: block;
+    background: url('../images/settings-3-24.png') no-repeat;
+}
+
+footer > span.docker-settings > a.docker-settings-button:hover {
+    background: url('../images/settings-3-24-blue.png') no-repeat;
+}
+
+footer > span.docker-settings > a.active {
+    background: url('../images/settings-3-24-blue.png') no-repeat;
+}
+
+footer > span span.label_action {
+    color: #81888d;
+    font-style: italic;
+}
+
+footer div.docker-settings-shortcuts-sub-menu {
+    position: absolute;
+    display: none;
+    z-index: 99;
+    width: 132px;
+    top: -40px;
+    left: -140px;
+    background: #f4f4f6;
+    border: solid 1px #0073ec;
+    border-bottom: solid 1px #0073ec;
+    border-radius: 4px;
+    padding:3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+footer > span.docker-settings div.docker-menu > div.shortcuts:hover > div.docker-settings-shortcuts-sub-menu
+{
+    display: block;
+}
+
+footer div.docker-settings-shortcuts-sub-menu > a {
+    display: block;
+    text-decoration: none;
+    color: #0073ec;
+    padding: 3px 5px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+footer div.docker-settings-shortcuts-sub-menu > a:hover {
+    color: #333;
+    background: #f8d69d;
+}
+
+
+/*****/
+div.docker-action {
+    display: none;
+    position:absolute;
+    z-index: 99;
+    top: -5px;
+    left: 80%;
+    background: #f4f4f6;
+    border: solid 1px #0073ec;
+    border-left: solid 2px #0073ec;
+    border-radius: 4px;
+    padding:3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+div.docker-action::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: -6px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #0073ec transparent transparent;
+}
+
+div.docker-action a {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin: 2px;
+}
+div.docker-action a.docker-action-start {
+    background: url("../images/actions/arrow-37-16.png") no-repeat;
+    background-size: cover;
+}
+
+div.docker-action a.docker-action-pause {
+    background: url("../images/actions/pause-16.png") no-repeat;
+    background-size: cover;
+}
+
+div.docker-action a.docker-action-restart {
+    background: url("../images/actions/restart-16.png") no-repeat;
+    background-size: cover;
+}
+
+div.docker-action a.docker-action-stop {
+    background: url("../images/actions/stop-16.png") no-repeat;
+    background-size: cover;
+}
+
+div.docker-action a.docker-action-copy {
+    background: url("../images/actions/copy-16.png") no-repeat;
+    background-size: cover;
+}
+
+div.docker-action a.docker-action-ssh {
+    background: url("../images/actions/window-command-16.png") no-repeat;
+    background-size: cover;
+}
+
+div.docker-action a.docker-action-create {
+    background: url("../images/actions/add-database-16.png") no-repeat;
+    background-size: cover;
+}
+
+div.docker-action a.docker-action-delete {
+    background: url("../images/actions/delete-database-16.png") no-repeat;
+    background-size: cover;
+}
+
+div.MessageBox {
+    display: none;
+    z-index:999;
+    position: absolute;
+    width: 200px;
+    min-height: 50px;
+    height: auto;
+    max-height: 350px;
+    top: 50%;
+    left: calc(50% - 100px);
+    background: #f4f4f6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: solid 1px #333;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+div.MessageBox > div.MessageBoxMenu {
+    font-weight: bold;
+    text-align: center;
+    border-bottom: solid 1px #aaa;
+}
+
+div.MessageBox > div.MessageBoxContent {
+    padding: 10px;
+    text-align: justify;
+}
+div.MessageBox > div.MessageBoxContent > label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+div.AlertBox {
+    display: none;
+    z-index:999;
+    position: absolute;
+    width: 200px;
+    min-height: 10px;
+    height: auto;
+    max-height: 350px;
+    top: 50%;
+    left: calc(50% - 100px);
+    background: #f4f4f6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: solid 1px #333;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+}
+
+div.AlertBox > label {
+    display: block;
+}
+
+div#clipboardCopy > button {
+    display: none;
+}
+
+span.terminal-prompt {
+    color: #f59800;
+}
+
+#login_in {
+    width: 300px;
+}
+
+#login_in form > label {
+    display: inline-block;
+    width: 90px;
+}
+
+#login_in form {
+    display: block;
+    padding-bottom: 10px;
+}

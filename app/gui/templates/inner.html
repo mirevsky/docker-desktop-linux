@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Docker Terminal</title>
+    <script type="text/javascript" src="../resources/external-libs/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../resources/external-libs/jquery-ui-1.13.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/external-libs/jquery-ui-1.13.1/jquery-ui.min.css">
+    <script type="text/javascript" src="../resources/external-libs/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/external-libs/jquery.terminal.min.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/inner-style.css">
+</head>
+<body>
+</body>
+<script type="module">
+    import DockerDesktop from "../components/docker-desktop.js";
+    import DockerInnerDesktop from "../components/docker-inner-desktop.js";
+    const terminalComponent = new DockerInnerDesktop()
+    terminalComponent.Render()
+    setTimeout(DockerDesktop.HealthCheck, 1000);
+</script>
+</html>

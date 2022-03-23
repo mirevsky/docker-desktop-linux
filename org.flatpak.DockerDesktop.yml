@@ -1,0 +1,13 @@
+app-id: org.flatpak.DockerDesktop
+runtime: org.freedesktop.Platform
+runtime-version: '40'
+sdk: org.freedesktop.Sdk
+command: docker-desktop run
+modules:
+  - name: Docker Desktop
+    buildsystem: simple
+    build-commands:
+      - install -D docker-desktop.sh /app/bin/docker-desktop.sh install
+    sources:
+      - type: file
+        path: docker-desktop.sh

@@ -6,6 +6,7 @@ It's graphical interface of Docker for Linux, this is not an official release fr
 ![](screenshots/screen02.png)
 ![](screenshots/screen03.png)
 ![](screenshots/screen04.png)
+![](screenshots/screen05.png)
 
 ### Requirements
 Before installing the script make sure to double check you have installed `gawk`

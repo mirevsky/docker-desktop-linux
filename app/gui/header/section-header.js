@@ -1,5 +1,6 @@
 import Control from "../libraries/controls.js";
 import {ImageLink, Table, TableCell, TableRow, Image, Hyperlink} from "../libraries/ui.js";
+import DockerSettings from "../blocks/docker/docker-settings.js";
 
 export default class SectionHeader extends Control
 {
@@ -38,8 +39,11 @@ export default class SectionHeader extends Control
         const label = new Control('span')
         label.Attribute('class', 'label')
         label.innerHTML = "Sign in"
-        const sign_in = new Hyperlink(user.Render().outerHTML+label.Render().outerHTML, "#sign_in")
+        const sign_in = new Hyperlink(user.Render().outerHTML+label.Render().outerHTML, window.location.hash)
         sign_in.Attribute('class', 'sign_in')
+        sign_in.onclick = () => {
+            new DockerSettings('docker-setting','sign_in',{}).Render()
+        }
         cell.Controls.Add(sign_in)
         tr.Controls.Add(cell)
 

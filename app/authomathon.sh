@@ -9,11 +9,11 @@ if [[ $2 =~ "sudo" ]];then
     fi
     count=`expr $count + 1`
   done
-  echo $exec_cmd
   expect -c '
-  send -- '$exec_cmd\r'
+  spawn /bin/bash
+  send "'$exec_cmd'\r"
   expect "*?assword:*"
-  send -- '$1'\r
+  send "'$1'\r"
   interact
   expect eof
   '
@@ -24,22 +24,26 @@ elif [[ "$1" =~ "docker" ]]; then
   done
   if [[ $2 = "login" ]];then
     expect -c '
-    send -- '$exec_cmd'
+    spawn /bin/bash
+    send "'$exec_cmd'\r"
     expect "*?sername:*"
-    send -- "'$3'"\r
+    send "'$3'\r"
     expect "*?assword:*"
-    send -- "'$4'"\r
+    send "'$4'\r"
+    interact
+    expect eof
+    '
+  elif [[ $exec_cmd =~ "prune" ]];then
+    expect -c '
+    spawn /bin/bash
+    send "'$exec_cmd'\r"
+    expect "y/N"
+    send "y\r"
     interact
     expect eof
     '
   else
-    expect -c '
-    send -- '$exec_cmd'
-    expect "Are you sure you want to continue? [y/N]"
-    send -- "y"\r
-    interact
-    expect eof
-    '
+    bash -c "$exec_cmd"
   fi
 
 

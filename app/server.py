@@ -120,8 +120,8 @@ def cmd():
 
 @server.route('/cmd/prune', methods=['POST'])
 def prune():
-    cmd_request = request.form['cmd'].split()
+    cmd_request = request.form['cmd'].split("&&")
     cmd = ''
     for arg_index in range(0, len(cmd_request)):
-        cmd += cmd_request[arg_index] + " "
-    return exec(cmd)
+        cmd += exec(cmd_request[arg_index]) + "\n"
+    return cmd

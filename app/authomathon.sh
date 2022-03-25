@@ -37,8 +37,6 @@ elif [[ "$1" =~ "docker" ]]; then
     send -- '$exec_cmd'
     expect "Are you sure you want to continue? [y/N]"
     send -- "y"\r
-    expect "Are you sure you want to continue? [y/N]"
-    send -- "y"\r
     interact
     expect eof
     '

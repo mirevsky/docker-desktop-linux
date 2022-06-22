@@ -1,8 +1,7 @@
 import json
 import os
 import webview
-from flask import Flask, render_template, jsonify, request
-import xml.etree.ElementTree as ET
+from flask import Flask, render_template, request
 
 gui_dir = os.path.join(os.path.dirname(__file__), '../..', 'gui')  # development path
 
@@ -54,7 +53,7 @@ def docker_login():
 @server.route('/docker/', methods=['POST'])
 def docker():
     action = request.form['cmd']
-    exec('./authomathon.sh sudo systemctl %s docker'.format(action))
+    exec('./authomathon.sh sudo -H systemctl %s docker'.format(action))
     return action
 
 

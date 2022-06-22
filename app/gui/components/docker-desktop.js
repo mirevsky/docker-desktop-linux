@@ -9,7 +9,7 @@ import Section from "../section/section.js";
 
 class DockerDesktop {
     static HealthCheck = () => {
-        let response = new Request(RequestType.GET, "/docker/status", (data) => {
+        new Request(RequestType.GET, "/docker/status", (data) => {
             const dockerStatus = new DockerStatus('docker-status', (data === DockerStatusType.Active) ? 'active' : 'deactivated' )
             Control.getById('docker-status').innerHTML = dockerStatus.Render().outerHTML
         });

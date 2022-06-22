@@ -118,6 +118,11 @@ def cmd():
     return exec(cmd)
 
 
+@server.route('/distro/', methods=['GET'])
+def distro():
+    return exec("gawk -F= '/^NAME/{print $2}' /etc/os-release && gawk -F= '/^VERSION/{print $2}' /etc/os-release")
+
+
 @server.route('/cmd/prune', methods=['POST'])
 def prune():
     cmd_request = request.form['cmd'].split("&&")
